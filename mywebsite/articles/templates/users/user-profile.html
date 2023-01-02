@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Merhaba
+{% for makale in makaleler %}
+
+
+    <p>{{ makale.title }}</p>
+    <p>{{ makale.description }}</p>
+    <p>Author: {{ makale.get_full_name }}</p>
+{% endfor %}
+
+</body>
+</html>
